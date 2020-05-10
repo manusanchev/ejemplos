@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #34495e;
+}
+
+
+#game div{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+}
+.contador, .boton{
+
+    background-color: rgb(100, 110, 110);
+    font-size: 50px;
+    
+}
+.record{
+
+   
+    font-size: 50px;
+    
+}
+
+
+.boton{
+    cursor: pointer;
+}
+
+.main{
+    display: none;
+}
