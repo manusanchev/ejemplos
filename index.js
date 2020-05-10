@@ -6,7 +6,7 @@ jQuery(".boton").on('click', () => {
         jQuery(".record").addClass("main")
         jQuery(".boton").hide();
         hacerJugada();
-        contador = 1;
+        contador = 0;
         jQuery(".contador").html(`<p>Nivel ${contador}</p>`)
 })
 
@@ -45,10 +45,12 @@ function hacerJugada(contador){
 
 jQuery(document).on('click','#game > div',function(e){
    var id = jQuery(this).attr("id");
-   contador++;
-   jQuery(".contador").html(`<p>Nivel ${contador}</p>`)
+   
   
    if(arr[aleatorio] == id){
+      
+    contador++;
+    jQuery(".contador").html(`<p>Nivel ${contador}</p>`)
     hacerJugada(contador);
    }else{
        if(contador> record){
