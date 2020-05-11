@@ -1,40 +1,47 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background-color: #34495e;
+body {
+    background-color: #425d79;
 }
 
+header {
+    background-color: #243241;
+    height: 15vh;
+}
 
-#game div{
-    width: 80px;
-    height:60px;
-    min-height: 60px;
+.menu,
+.main {
+    height: 50vh;
+}
+
+#game {
+    width: 100%;
+  
+}
+
+#game div div{
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
-    background-color: red;
     cursor: pointer;
-}
-.contador, .boton{
-
-    background-color: rgb(100, 110, 110);
-    font-size: 50px;
-    
-}
-.record{
-
    
-    font-size: 50px;
-    
 }
 
-
-.boton{
-    cursor: pointer;
+.btn {
+    font-size: large;
 }
 
-.main{
-    display: none;
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .btn {
+        width: 60%;
+    }
+   
 }
